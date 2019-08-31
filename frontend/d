@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="en">
+<head>
+    <title>Projects</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyryl Melekhin">
+    <link rel="stylesheet" href="vc-dark.css">
+</head>
+
+
+<body>
+<div id="side-heading">
+<br>
+<pre class="heading">
+2019-08-28
+----------
+FAETHER
+</pre>
+</div>
+<pre class="heading char140 char120"> _______  _______  _______ _________ _______  _______ _________ _______ 
+(  ____ )(  ____ )(  ___  )\__    _/(  ____ \(  ____ \\__   __/(  ____ \
+| (    )|| (    )|| (   ) |   )  (  | (    \/| (    \/   ) (   | (    \/
+| (____)|| (____)|| |   | |   |  |  | (__    | |         | |   | (_____ 
+|  _____)|     __)| |   | |   |  |  |  __)   | |         | |   (_____  )
+| (      | (\ (   | |   | |   |  |  | (      | |         | |         ) |
+| )      | ) \ \__| (___) ||\_)  )  | (____/\| (____/\   | |   /\____) |
+|/       |/   \__/(_______)(____/   (_______/(_______/   )_(   \_______)
+
+</pre>
+<pre class="heading char80">####### ####### ####### ######## ########  ###### ########   ####
+      ##      ##      ##     ##           ###        ###    ###  
+ ######  ######  ##   ##     ##   ####### ###        ###    ###  
+ ###     ##  ##  ##   ##     ##   ###     ###        ###    ###  
+ ###     ##   ##  #####  ######   #######  ######    ### #####  
+</pre>
+<pre class="heading char60"> ____   ____   ____    ___   ___   ___  _____   ___ 
+)  _)\ /  _ \ / __ \  )_ _( ) __( / _( )__ __( (  _(
+| '__/ )  ' / ))__((  _) |  | _)  ))_    | |   _) \ 
+)_(    |_()_\ \____/ )___(  )___( \__(   )_(  )____)
+</pre>
+<br>
+
+<div id="side-links">
+<pre class="heading">
++-------------------+
+| <a href="https://kyryl.xm.vu">Home</a>              |
+| <a href="https://github.com/FAETHER">Github</a>            | 
++-------------------+
+| <a href="#VEther" target="_self">VEther</a>            |
+| <a href="#SDL-projects" target="_self">SDL-projects</a>      |
+| <a href="#FA-Binary-Patches" target="_self">FA-Binary-Patches</a> |
+| <a href="#FA_Patcher" target="_self">FA_Patcher</a>        |
+| <a href="#Eng-Learn" target="_self">Eng-Learn</a>         |
+| <a href="#N-pwr-R" target="_self">N-pwr-R</a>           |
+| <a href="#Pi-Endeavors" target="_self">Pi-Endeavors</a>      |
+| <a href="#fa" target="_self">fa</a>                |
+| <a href="#Arduino-Projects" target="_self">Arduino-Projects</a>  |
+| <a href="#Atelerix-Engine" target="_self">Atelerix-Engine</a>   |
+| <a href="#SigFigures-Calc" target="_self">SigFigures-Calc</a>   |
+| <a href="#ArthasModPack" target="_self">ArthasModPack</a>     |
+| <a href="#MASM-Projects" target="_self">MASM-Projects</a>     |
+| <a href="#Cell-Game-LD40" target="_self">Cell-Game-LD40</a>    |
+| <a href="#My-Website" target="_self">My-Website</a>        |
++-------------------+
+</pre>
+</div>
+
+This page explains my projects in depth and documents their functionality.<br>
+<br>
+
+<span id="VEther" class="heading"><a href="https://github.com/FAETHER/VEther">VEther</a><br>
+===============</span><br>
+Probably one of the most complex projects on my side. <br />
+An attempt to write 3d game engine from scratch using <a href="https://en.wikipedia.org/wiki/Vulkan_(API)">Vulkan Api.</a>
+<br />
+<br />
+
+The current codebase features: <br />
+- Complete custom allocators for RAM and VRAM memory and memory pools.<br />
+- Complete obj parser for 3d meshes loading<br />
+- Embeded glsl compiler for shaders, possible to add shader recompilation at runtime<br />
+- SPIRV generation <br />
+- Custom code to load vulkan and initialize everything <br />
+- Own custom math library and types<br />
+- Embeded Glfw library <br />
+- Uniform build script via Makefile <br />
+- No external dependencies <br />
+- Cross platform, Linux & Windows <br />
+- 2d texture loader for png textures <br />
+- Complete & saturated triangle list pipeline <br />
+<br><br>
+
+<span id="SDL-projects" class="heading"><a href="https://github.com/FAETHER/SDL-projects">SDL-projects</a><br>
+===============</span><br>
+My projects using <a href="https://www.libsdl.org/">SDL</a> graphics library. <br />
+<br />
+
+There are currently 2 projects: <br />
+/Ether directory contains a simple setup code, and the idea behind it was <br />
+to just learn to draw lines. It draws different shapes and matterns based <br />
+on the window size, and the line reflects every lime it hits a corner of the <br />
+window. <br />
+<br />
+/Standalone contains entire SDL library with my own custom Makefile. <br />
+Only tested under Windows OS and proven to work. This project does character/font <br />
+rendering from texture atlas and has complete ability to rotate, scale and animate characters. <br />
+More information in the Readme file. <br />
+<br />
+This repository might expand in the future, as I get more ideas to implement. <br />
+<br><br>
+
+<span id="FA-Binary-Patches" class="heading"><a href="https://github.com/FAETHER/FA-Binary-Patches">FA-Binary-Patches</a><br>
+===============</span><br>
+Binary patches for the engine of <a href="https://en.wikipedia.org/wiki/Supreme_Commander:_Forged_Alliance">SUPCOM</a>.<br />
+<br />
+
+It follows a long story, but unfortunately this legendary<br />
+game has its game engine closed sourced and unavailable.<br />
+Because I love this game, I have made binary patches to address<br />
+common bugs with the engine and add some features to it.<br />
+Everything had to be done in x86 assembly and with no source code,
+basically a blind reverse engineering.<br />
+<br />
+Current Patches available: <br />
+- Support for shared army mod, <br />
+&nbsp;&nbsp;which allows multiple players to control 1 army at the same time.<br />
+- Added extra category for units to be able to get selected while being built. <br />
+- Units with 'WALL' category are now all selectable with double click<br />
+- Fixed crash when entity is destroyed but attack order, or move is still in que <br />
+- Removed double render of range rings, which improved rendering of unit range <br />
+&nbsp;&nbsp;rings by + 10 FPS in certain scenarios. <br />
+- Removed hard-coded no-rush timer and made it flexible to any value <br />
+- Fixed replay desyncronization issues when a player leaves the game while other <br />
+&nbsp;&nbsp;players give unit commands, I reverse engineered the network protocol and wrote robust <br />
+&nbsp;&nbsp;algoritm to block any commands at that precious moment. (Really difficult patch to implement, lots <br />
+&nbsp;&nbsp;of time went into this) <br />
+- Removed some code in many places with the goal to improve performance  <br />
+<br />
+So you would ask me why? This is how I was able to master my  <br />
+reverse engineering & assembly skills while bringing good <br />
+things to 40K+ players community while doing nearly hacks on the edge of impossible.<br />
+<br><br>
+
+<span id="FA_Patcher" class="heading"><a href="https://github.com/FAETHER/FA_Patcher">FA_Patcher</a><br>
+===============</span><br>
+My patcher for .exe files. Windows PE only.<br />
+<br />
+
+This project powers and enables me to edit assembly code of <br />
+Windows executable files. This is a tricky and not easy process, <br />
+it requires memory allocations, code relocations, assembly hooks<br />
+and understanding of PE format on Windows OS.<br />
+I have been working on it over the year long term constantly improving <br />
+and adding new features. <br />
+<br />
+Features: <br />
+- Creation of extra sections on EXE of any size. <br />
+- Complete remote assembler implementation (asmjit) <br /> 
+- Jit asm parser (asmtk) <br />
+- Self packing technique which packages ASCII files for patch destribution <br />
+- pelib implementation to do EXE specific edits, for instance PE header <br />
+- Parser for raw assembly conversion to GCC style <br />
+- Sections created by patcher can have C code loaded onto them <br />
+<br />
+Objective: <br />
+This is a unitility program designed for those who know what they are doing.<br />
+In order to properly use it and create own patches one has to know asm and C, <br />
+but otherwise one can run already implemented patches right out of the box. <br />
+<br><br>
+
+INCOMPLETE. MORE TO COME.
+<br><br>
+
+</body>
+</html>
