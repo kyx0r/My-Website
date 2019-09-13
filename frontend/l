@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html>
-    
-<title>Resume</title>    
 
-<style>
-body {background-color:black; color:black;}
-h1   {background-color:black; color:green;}
-h2   {background-color:black; color:green;}
-p    {background-color:black; color:white;}
-.description {background-color:black; color:orange;}
-.description em {color:blue; font-size:20px;}
-</style>      
-    
-<body background="675912.png">
-    
-<h1>
-Kyryl Melekhin, Florida Tech FL 32901 | kmelekhin2019@my.fit.edu 
-<a href="https://kyryl.xm.vu">Home</a><br />
-</h1>
+<!--
 
-<h2>
-Systems programmer | Major: Computer Science
-</h2>
+    <SUP><FONT COLOR="#00FF00">abc </SUP></FONT>
+-->    
+    
+<LINK REL="stylesheet" TYPE="text/css" HREF="../style.css">
+<TITLE>Resume</TITLE>
 
-<p class="description">
-<br />
-<em>Qualifications:</em>
-<br />
+
+<H1 ALIGN="center"><SPAN CLASS="GreenColor"> Kyryl Melekhin, Florida Tech FL 32901 | kmelekhin2019@my.fit.edu </SPAN> </br>
+<SPAN CLASS="GreenColor">Systems programmer | Major: Computer Science </SPAN> </br>
+<a href="/">Home</a><br /></H1>
+
+<P ALIGN="center"><IMG SRC="Barre.png" WIDTH="600" HEIGHT="10"></P>
+
+<p ALIGN="left" DIR="ltr">
+<SPAN CLASS="BlueColor">Qualifications: </SPAN><br />
 Two years of experience with x86_64 assembly, C, C++ building task oriented applications. <br />
 Deep knowledge in reverse engineering and Linux | Windows systems. <br />
 Profficient in system administration and cli tools such as: Make, Gcc, Nasm, Shell, As, Cmake. <br />
@@ -36,53 +27,49 @@ Experienced with libraries such as: SDL, Boost C++ libraries, Asmjit, Wxwidgets,
 Knowledge in Vulkan spec and gpu programming. Including rendering techniques and 3d mathematics. <br />
 Expert in memory management and memory pools. <br />
 Experienced working with embeded systems such as: Arduino, Raspberi pi, esp32. <br />
-Knows the theory behind operating systems and possible implementation of one. <br />
-<br />
+Knows the theory behind operating systems and possible implementation of one. <br /><br />
 </p>
 
-<p class="description">
-<br />
-<em>My github profile:</em> <br />
-<a href="https://github.com/FAETHER">https://github.com/FAETHER</a>
-<br />
-<br />
+<P ALIGN="center"><IMG SRC="Barre.png" WIDTH="600" HEIGHT="10"></P>
+
+<p ALIGN="left" DIR="ltr">
+<SPAN CLASS="BlueColor">My github profile:</SPAN> <br />
+<a href="https://github.com/FAETHER">https://github.com/FAETHER</a> <br /><br />
 </p>
 
-<p class="description">
-<br />
-<em>Achivements:</em>
-<br />
+<P ALIGN="center"><IMG SRC="Barre.png" WIDTH="600" HEIGHT="10"></P>
+
+<p ALIGN="left" DIR="ltr">
+<SPAN CLASS="BlueColor">Achivements:</SPAN><br />
 High school graduation with 4.3 weighted GPA. <br />
 Wrote 3d graphics renderer from scratch* with Vulkan. <br />
 Wrote complete assembly patcher for .exe files that also allows compilation of C code into them. <br />
 Passing Ap computer science prin and A courses at high school. <br />
-<a href="https://kyryl.xm.vu/d">Detailed documentation of my projects.</a><br />
-<br />
+<a href="/d">Detailed documentation of my projects.</a> <br /><br />
 </p>
 
+<P ALIGN="center"><IMG SRC="Barre.png" WIDTH="600" HEIGHT="10"></P>
 
-<p class="description">
-<br />
-<em>Languages:</em> <br />
-Russian, Ukrainian and English. <br />  
-<br />
+<p ALIGN="left" DIR="ltr">
+<SPAN CLASS="BlueColor">Languages:</SPAN><br />
+Russian, Ukrainian and English. <br /><br />
 </p>    
 
-<p class="description">
-<em>My work expererience:</em> <br />
+<P ALIGN="center"><IMG SRC="Barre.png" WIDTH="600" HEIGHT="10"></P>
+
+<p ALIGN="left" DIR="ltr">
+<SPAN CLASS="BlueColor">My work expererience:</SPAN> <br />
 I have worked for a company Moded Zone, which involves soldering and modding <br />
 ps4, xbox controllers. Have proven to be a good employee. <br />
-<a href="https://www.moddedzone.com/">https://www.moddedzone.com/</a><br /><br />
-
+<a href="https://www.moddedzone.com/">https://www.moddedzone.com/</a><br />
 Worked at mechanic shop for more than a year. <br />
-No commercial work experience as software developer yet, but I am looking forward to. 
-<br />
-<br />
+No commercial work experience as software developer yet, but I am looking forward to. <br /><br />
 </p>
 
+<P ALIGN="center"><IMG SRC="Barre.png" WIDTH="600" HEIGHT="10"></P>
 
-<p class="description">
-<em>Objective:</em> <br />
+<p ALIGN="left" DIR="ltr">
+<SPAN CLASS="BlueColor">Objective:</SPAN> <br />
 My name is Kyryl Melekhin and I am first year student at Florida Institute Of Technology. <br />
 I have been doing programming for the last 2 years, most of which includes personal projects. <br />
 It has been my dream for those last years to become software engineer and I am working hard towards that. <br />
@@ -92,6 +79,8 @@ and physics on my own time. My areas of interest lie in graphics programming and
 passion has always been inspired by knowing how a system actually works. I may have or not qualificaions needed but please <br />
 give me a chance to learn the technology I may not be falimiar with. <br /> <br />
 </p>
+
+<P ALIGN="center"><IMG SRC="Barre.png" WIDTH="600" HEIGHT="10"></P>
 
 </body>
 </html>

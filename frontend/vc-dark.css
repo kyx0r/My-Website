@@ -5,19 +5,19 @@
 /* include Hack font: */
 @font-face {
     font-family: 'Hack-Regular';
-    src: url('https://kyryl.xm.vu/fonts/Hack-Regular.ttf')
+    src: url('/fonts/Hack-Regular.ttf')
 }
 @font-face {
     font-family: 'Hack-Bold';
-    src: url('https://kyryl.xm.vu/fonts/Hack-Bold.ttf');
+    src: url('/fonts/Hack-Bold.ttf');
 }
 @font-face {
     font-family: 'Hack-BoldItalic';
-    src: url('https://kyryl.xm.vu/fonts/Hack-BoldItalic.ttf');
+    src: url('/fonts/Hack-BoldItalic.ttf');
 }
 @font-face {
     font-family: 'Hack-Italic';
-    src: url('https://kyryl.xm.vu/fonts/Hack-Italic.ttf');
+    src: url('/fonts/Hack-Italic.ttf');
 }
 
 /* single size monospace font: */
