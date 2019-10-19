@@ -1,0 +1,221 @@
+BODY {
+	font-size: 12pt;
+	font-family: "Courier New", Verdana;
+	font-style: normal;
+	color: #CCCCCC;
+	background-image: url('Fond.png');
+	border-color: #cccccc;
+	
+	/*Cool looking scrollbar - IE Only*/
+	scrollbar-arrow-color: #999999;
+	scrollbar-face-color: #002A95;
+	scrollbar-track-color: #3C7AB4;
+	
+	scrollbar-highlight-color: #015BBF;
+	scrollbar-3dlight-color: #015BBF; 
+	
+	scrollbar-shadow-color: #0044AB;
+}
+/*Title 1*/
+H1 {
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+	color: #999999;
+}
+/*Title 2*/
+H2 {
+	font-size: 14pt;
+	font-weight: normal;
+	color: #999999;
+}
+/*Title 3*/
+H3 {
+	font-size: 13pt;
+	font-weight: normal;
+	color: #CCCCCC;
+}
+/*Title 4*/
+H4 {
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: italic;
+}
+/*Link*/
+A:link {
+	color: #6699CC;			/*blue*/
+	text-decoration: none;
+}
+/*Link selected*/
+A:active {
+	color: #999999;			/*dark grey*/
+	text-decoration: none;
+}
+/*Link visited*/
+A:visited {
+	color: #cc9966;			/*green*/
+	text-decoration: none;
+}
+/*Mouse hover the link*/
+A:hover {
+	text-decoration: underline;
+}
+TABLE {
+	border: 0px none;
+	border-collapse: collapse
+}
+/*Menu Table*/
+TABLE.Menu {
+	visibility: visible;
+	position: relative;
+	width: 100%;
+}
+TABLE.MenuAbs {
+	visibility: visible;
+	position: absolute;
+}
+/*Title of a menu*/
+TD.MenuTitle {
+	background-color: #003399;
+	height: 24px;
+	text-align: center;
+	color: #999999;
+	font-weight: bold;
+}
+TABLE.Forum {
+	border-style: solid;
+	border-width: 1px;
+}
+TD.TDBanniere {
+	font-size: 10pt;
+}
+TD.TDSolidBanniere {
+	font-size: 10pt;
+	background-color: #0C0C0C;
+	border-style: solid;
+	border-width: 1px;
+}
+TD.Category {
+	background-color: #002288;
+	height: 28px;
+	text-align: center;
+	color: #999999;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 1px;
+}
+TD.Forum {
+	background-color: #003399;
+	height: 26px;
+	text-align: left;
+	color: #999999;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 1px;
+}
+TD.List {
+	background-color: #111111;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+}
+/*Table title*/
+TD.CellTitle {
+	background-color: #003399;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #999999;
+	border-style: solid;
+	border-width: 1px;
+}
+/*Table title*/
+TD.CellText {
+	background-color: #0C0C0C;
+	border-style: solid;
+	border-width: 1px;
+}
+/*Table title*/
+TD.CellCode {
+	background-color: #0C0C0C;
+	vertical-align: top;
+}
+/*Dark grey color*/
+span.DarkGreyColor {
+	color: #999999;
+}
+/*Red color*/
+span.RedColor {
+	color: #cc9966;
+}
+/*Blue color*/
+span.BlueColor {
+    font-size: 16pt;
+	color: #6699FF;
+}
+
+span.GreenColor
+{
+    color: #66FF66;   
+}
+
+/*Small letter*/
+span.SmallSize {
+	font-size: 10pt;
+}
+/*Picture description*/
+span.InfoPicture {
+	font-size: 12pt;
+	font-style: italic;
+	color: #999999;
+}
+/*Site description*/
+.InfoSite {
+	font-size: 10pt;
+}
+/*Code Java*/
+.JavaCode {
+	font-size: 10pt;
+	color: #cccccc;
+}
+/*Java functions*/
+span.JavaFunc {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #999999;
+}
+/*Java Parameter*/
+span.JavaParam {
+	font-size: 12pt;
+	font-style: italic;
+	color: #cccccc;
+}
+/*Commentaire Java*/
+span.JavaComment {
+	font-size: 10pt;
+	color: #8AB08A;
+}
+
+/*Form styles*/
+
+INPUT, TEXTAREA, SELECT, PASSWORD, SUBMIT, FILE {
+	font-size: 12pt;
+	font-family: "Courier New", Verdana;
+	font-style: normal;
+	color: #111111;
+	border-color: #AAAAAA;
+	background-color:#DDDDDD;
+}
+
+SUBMIT {
+	font-size: 12pt;
+	font-family: "Courier New", Verdana;
+	font-style: normal;
+	color: #111111;
+	border-color: #AAAAAA;
+	background-color:#DDDDDD;
+}
+
+
+INPUT.mysubmit {
+	font-weight : bold;
+}
