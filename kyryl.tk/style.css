@@ -3,7 +3,7 @@ BODY {
 	font-family: "Courier New", Verdana;
 	font-style: normal;
 	color: #CCCCCC;
-	background-image: url('Fond.png');
+	background-image: url('/images/Fond.png');
 	border-color: #cccccc;
 	
 	/*Cool looking scrollbar - IE Only*/
