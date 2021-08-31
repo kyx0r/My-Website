@@ -2,31 +2,11 @@
 /*=========================  mono-dark.css  ==========================*/
 /* Terminal-like monospace dark css theme with dynamic ascii tables. */
 
-/* include Hack font: */
-@font-face {
-    font-family: 'Hack-Regular';
-    src: url('/fonts/Hack-Regular.ttf')
-}
-@font-face {
-    font-family: 'Hack-Bold';
-    src: url('/fonts/Hack-Bold.ttf');
-}
-@font-face {
-    font-family: 'Hack-BoldItalic';
-    src: url('/fonts/Hack-BoldItalic.ttf');
-}
-@font-face {
-    font-family: 'Hack-Italic';
-    src: url('/fonts/Hack-Italic.ttf');
-}
-
-/* single size monospace font: */
 * {
     background-color: #000000;
     color: #cccccc;
-    font-family: Hack, Hack-Regular, monospace;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12pt;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -50,7 +30,6 @@ body {
 }
 
 #side-links a {
-    font-family: Hack, Hack-Bold, monospace;
     font-weight: bold;
 }
 
@@ -62,35 +41,29 @@ a:hover {
 }
 
 pre {
-    font-family: Hack, Hack-Bold, monospace;
     font-weight: bold;
     color: #333333;
 }
 pre .code {
-    font-family: Hack, Hack-Bold, monospace;
     font-weight: bold;
     color: #777777;
 }
 pre .code .var {
-    font-family: Hack, Hack-BoldItalic, monospace;
     font-style: italic;
     font-weight: bold;
     color: #555588;
 }
 pre .emph {
-    font-family: Hack, Hack-BoldItalic, monospace;
     color: #333333;
     font-weight: bold;
     font-style: italic;
 }
 
 .heading {
-    font-family: Hack, Hack-Bold, monospace;
     font-weight: bold;
     color: #00bbff;
 }
 .file, .emph, .var {
-    font-family: Hack, Hack-Italic, monospace;
     font-style: italic;
 }
 .var {
