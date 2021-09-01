@@ -1,20 +1,17 @@
 body {
-	font-size: 12pt;
+	font-size: 16px;
 	font-style: normal;
 	color: #CCCCCC;
 	background-image: url('/images/Fond.png');
 	border-color: #cccccc;
+	max-width: 1000px; margin: auto;
 }
 p {
 	text-align: center;
 }
-ul {
-	width: 10%;
-	margin: auto;
-}
 /*Title 1*/
 h1 {
-	font-size: 18pt;
+	font-size: 22px;
 	font-weight: bold;
 	text-align: center;
 	color: #999999;
@@ -48,7 +45,7 @@ span.RedColor {
 }
 /*Blue color*/
 span.BlueColor {
-	font-size: 16pt;
+	font-size: 20px;
 	color: #6699FF;
 }
 span.GreenColor

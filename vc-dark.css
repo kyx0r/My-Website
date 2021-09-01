@@ -3,10 +3,10 @@
 /* Terminal-like monospace dark css theme with dynamic ascii tables. */
 
 * {
-    background-color: #000000;
+    background-image: url('/images/Fond.png');
     color: #cccccc;
     font-weight: normal;
-    font-size: 12pt;
+    font-size: 16px;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
