@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Projects</title>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kyryl Melekhin">
-    <link rel="stylesheet" href="vc-dark.css">
+	<title>Projects</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kyryl Melekhin">
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<style>
+		body {
+			background-image: url('/images/Fond.png');
+			color: #cccccc;
+			font-weight: normal;
+			font-size: 16px;
+			text-decoration: none;
+			overflow-y: scroll;
+		}
+		pre { overflow-x: hidden }
+	        img,#b { max-width: 90ch }
+		@media(max-width: 999px) { body { font-size:1.94vw } }
+		a { color: #0055ff; }
+		a:hover { color: #00bbff; }
+		.heading { font-weight: bold; color: #00bbff; }
+	</style>
 </head>
 
-<div id="side-heading">
-<br>
+<div style="display:table;margin:16px auto">
+<div id=b>
+
 <pre class="heading">
-2021-08-31
+2021-09-01
 ----------
 kyx0r
-</pre>
-</div>
-<pre class="heading char140 char120"> _______  _______  _______ _________ _______  _______ _________ _______ 
+ _______  _______  _______ _________ _______  _______ _________ _______
 (  ____ )(  ____ )(  ___  )\__    _/(  ____ \(  ____ \\__   __/(  ____ \
 | (    )|| (    )|| (   ) |   )  (  | (    \/| (    \/   ) (   | (    \/
-| (____)|| (____)|| |   | |   |  |  | (__    | |         | |   | (_____ 
+| (____)|| (____)|| |   | |   |  |  | (__    | |         | |   | (_____
 |  _____)|     __)| |   | |   |  |  |  __)   | |         | |   (_____  )
 | (      | (\ (   | |   | |   |  |  | (      | |         | |         ) |
 | )      | ) \ \__| (___) ||\_)  )  | (____/\| (____/\   | |   /\____) |
 |/       |/   \__/(_______)(____/   (_______/(_______/   )_(   \_______)
 
-</pre>
-<pre class="heading char80">####### ####### ####### ######## ########  ###### ########   ####
-      ##      ##      ##     ##           ###        ###    ###  
- ######  ######  ##   ##     ##   ####### ###        ###    ###  
- ###     ##  ##  ##   ##     ##   ###     ###        ###    ###  
- ###     ##   ##  #####  ######   #######  ######    ### #####  
-</pre>
-<pre class="heading char60"> ____   ____   ____    ___   ___   ___  _____   ___ 
-)  _)\ /  _ \ / __ \  )_ _( ) __( / _( )__ __( (  _(
-| '__/ )  ' / ))__((  _) |  | _)  ))_    | |   _) \ 
-)_(    |_()_\ \____/ )___(  )___( \__(   )_(  )____)
-</pre>
-<br>
-
-<div id="side-links">
-<pre class="heading">
 +-------------------+
 | <a href="/">Home</a>              |
-| <a href="https://github.com/kyx0r">Github</a>            | 
+| <a href="https://github.com/kyx0r">Github</a>            |
 +-------------------+
 | <a href="#VEther" target="_self">VEther</a>            |
 | <a href="#SDL-projects" target="_self">SDL-projects</a>      |
@@ -65,250 +64,226 @@ kyx0r
 | <a href="#Klec" target="_self">Klec</a>              |
 +-------------------+
 </pre>
-</div>
 
-This page explains my projects in depth and documents their functionality among with
-some personal remarks.<br>
-<br>
+<pre>
+This page explains my projects in depth and documents their functionality
+among with some personal remarks.
 
-<span id="VEther" class="heading"><a href="https://github.com/kyx0r/VEther">VEther</a><br>
-===============</span><br>
-Probably one of the most complex projects on my side. <br />
+<span id="VEther" class="heading"><a href="https://github.com/kyx0r/VEther">VEther</a>
+===============</span>
+Probably one of the most complex projects on my side.
 An attempt to write 3d game engine from scratch using <a href="https://en.wikipedia.org/wiki/Vulkan_(API)">Vulkan Api.</a>
-<br />
-<br />
 
-The current codebase features: <br />
-- Complete custom allocators for RAM and VRAM memory and memory pools.<br />
-- Complete obj parser for 3d meshes loading<br />
-- Embeded glsl compiler for shaders, possible to add shader recompilation at runtime<br />
-- SPIRV generation <br />
-- Custom code to load vulkan and initialize everything <br />
-- Own custom math library and types<br />
-- Embeded Glfw library <br />
-- Uniform build script via Makefile <br />
-- No external dependencies <br />
-- Cross platform, Linux & Windows <br />
-- 2d texture loader for png textures <br />
-- Complete & saturated triangle list pipeline <br />
-<br><br>
+The current codebase features:
+- Complete custom allocators for RAM and VRAM memory and memory pools.
+- Complete obj parser for 3d meshes loading
+- Embeded glsl compiler for shaders, possible to add shader recompilation
+at runtime
+- SPIRV generation
+- Custom code to load vulkan and initialize everything
+- Own custom math library and types
+- Embeded Glfw library
+- Uniform build script via Makefile
+- No external dependencies
+- Cross platform, Linux & Windows
+- 2d texture loader for png textures
+- Complete & saturated triangle list pipeline
 
-<span id="SDL-projects" class="heading"><a href="https://github.com/kyx0r/SDL-projects">SDL-projects</a><br>
-===============</span><br>
-My projects using <a href="https://www.libsdl.org/">SDL</a> graphics library. <br />
-<br />
+<span id="SDL-projects" class="heading"><a href="https://github.com/kyx0r/SDL-projects">SDL-projects</a>
+===============</span>
+My projects using <a href="https://www.libsdl.org/">SDL</a> graphics library.
 
-There are currently 2 projects: <br />
-/Ether directory contains a simple setup code, and the idea behind it was <br />
-to just learn to draw lines. It draws different shapes and matterns based <br />
-on the window size, and the line reflects every lime it hits a corner of the <br />
-window. <br />
-<br />
-/Standalone contains entire SDL library with my own custom Makefile. <br />
-Only tested under Windows OS and proven to work. This project does character/font <br />
-rendering from texture atlas and has complete ability to rotate, scale and animate characters. <br />
-More information in the Readme file. <br />
-<br />
-This repository might expand in the future, as I get more ideas to implement. <br />
-<br><br>
+There are currently 2 projects:
+/Ether directory contains a simple setup code, and the idea behind it was
+to just learn to draw lines. It draws different shapes and matterns based
+on the window size, and the line reflects every lime it hits a corner of the
+window.
 
-<span id="FA-Binary-Patches" class="heading"><a href="https://github.com/kyx0r/FA-Binary-Patches">FA-Binary-Patches</a><br>
-===============</span><br>
-Binary patches for the engine of <a href="https://en.wikipedia.org/wiki/Supreme_Commander:_Forged_Alliance">SUPCOM</a>.<br />
-<br />
+/Standalone contains entire SDL library with my own custom Makefile.
+Only tested under Windows OS and proven to work. This project does character/
+font rendering from texture atlas and has complete ability to rotate, scale and
+animate characters.
+More information in the Readme file.
 
-It follows a long story, but unfortunately this legendary<br />
-game has its game engine closed sourced and unavailable.<br />
-Because I love this game, I have made binary patches to address<br />
-common bugs with the engine and add some features to it.<br />
+This repository might expand in the future, as I get more ideas to implement.
+
+<span id="FA-Binary-Patches" class="heading"><a href="https://github.com/kyx0r/FA-Binary-Patches">FA-Binary-Patches</a>
+===============</span>
+Binary patches for the engine of <a href="https://en.wikipedia.org/wiki/Supreme_Commander:_Forged_Alliance">SUPCOM</a>.
+
+It follows a long story, but unfortunately this legendary
+game has its game engine closed sourced and unavailable.
+Because I love this game, I have made binary patches to address
+common bugs with the engine and add some features to it.
 Everything had to be done in x86 assembly and with no source code,
-basically a blind reverse engineering.<br />
-<br />
-Current Patches available: <br />
-- Support for shared army mod, <br />
-&nbsp;&nbsp;which allows multiple players to control 1 army at the same time.<br />
-- Added extra category for units to be able to get selected while being built. <br />
-- Units with 'WALL' category are now all selectable with double click<br />
-- Fixed crash when entity is destroyed but attack order, or move is still in que <br />
-- Removed double render of range rings, which improved rendering of unit range <br />
-&nbsp;&nbsp;rings by + 10 FPS in certain scenarios. <br />
-- Removed hard-coded no-rush timer and made it flexible to any value <br />
-- Fixed replay desyncronization issues when a player leaves the game while other <br />
-&nbsp;&nbsp;players give unit commands, I reverse engineered the network protocol and wrote robust <br />
-&nbsp;&nbsp;algoritm to block any commands at that precious moment. (Really difficult patch to implement, lots <br />
-&nbsp;&nbsp;of time went into this) <br />
-- Removed some code in many places with the goal to improve performance  <br />
-<br />
-So you would ask me why? This is how I was able to master my  <br />
-reverse engineering & assembly skills while bringing good <br />
-things to 40K+ players community while doing nearly hacks on the edge of impossible.<br />
-<br><br>
+basically a blind reverse engineering.
 
-<span id="FA_Patcher" class="heading"><a href="https://github.com/kyx0r/FA_Patcher">FA_Patcher</a><br>
-===============</span><br>
-My patcher for .exe files. Windows PE only.<br />
-<br />
+Current Patches available:
+- Support for shared army mod,
+&nbsp;&nbsp;which allows multiple players to control 1 army at the same time.
+- Added extra category for units to be able to get selected while being built.
+- Units with 'WALL' category are now all selectable with double click
+- Fixed crash when entity is destroyed but attack order, or move is still in que
+- Removed double render of range rings, which improved rendering of unit range
+&nbsp;&nbsp;rings by + 10 FPS in certain scenarios.
+- Removed hard-coded no-rush timer and made it flexible to any value
+- Fixed replay desyncronization issues when a player leaves the game while other
+&nbsp;&nbsp;players give unit commands, I reverse engineered the network
+protocol and wrote robust &nbsp;&nbsp;algoritm to block any commands at that
+precious moment. (Really difficult patch to implement, lots &nbsp;&nbsp;of
+time went into this)
+- Removed some code in many places with the goal to improve performance
 
-This project powers and enables me to edit assembly code of <br />
-Windows executable files. This is a tricky and not easy process, <br />
-it requires memory allocations, code relocations, assembly hooks<br />
-and understanding of PE format on Windows OS.<br />
-I have been working on it over the year long term constantly improving <br />
-and adding new features. <br />
-<br />
-Features: <br />
-- Creation of extra sections on EXE of any size. <br />
-- Complete remote assembler implementation (asmjit) <br /> 
-- Jit asm parser (asmtk) <br />
-- Self packing technique which packages ASCII files for patch destribution <br />
-- pelib implementation to do EXE specific edits, for instance PE header <br />
-- Parser for raw assembly conversion to GCC style <br />
-- Sections created by patcher can have C code loaded onto them <br />
-<br />
-Objective: <br />
-This is a unitility program designed for those who know what they are doing.<br />
-In order to properly use it and create own patches one has to know asm and C, <br />
-but otherwise one can run already implemented patches right out of the box. <br />
-<br><br>
+So you would ask me why? This is how I was able to master my
+reverse engineering & assembly skills while bringing good
+things to 40K+ players community while doing nearly hacks on the edge of
+impossible.
 
-<span id="Eng-Learn" class="heading"><a href="https://github.com/kyx0r/Eng-Learn">Eng-Learn</a><br>
-===============</span><br>
-A simple gui program.<br />
-<br />
+<span id="FA_Patcher" class="heading"><a href="https://github.com/kyx0r/FA_Patcher">FA_Patcher</a>
+===============</span>
+My patcher for .exe files. Windows PE only.
+This project powers and enables me to edit assembly code of
+Windows executable files. This is a tricky and not easy process,
+it requires memory allocations, code relocations, assembly hooks
+and understanding of PE format on Windows OS.
+I have been working on it over the year long term constantly improving
+and adding new features.
 
-Using c++ library called WxWidgets the project aims to create a quizlet <br />
-program where one can create a database of words and quiz self. It has complete UTF-8 <br />
-support and a non repeating randomizer. <br />
-<br />
+Features:
+- Creation of extra sections on EXE of any size.
+- Complete remote assembler implementation (asmjit)
+- Jit asm parser (asmtk)
+- Self packing technique which packages ASCII files for patch destribution
+- pelib implementation to do EXE specific edits, for instance PE header
+- Parser for raw assembly conversion to GCC style
+- Sections created by patcher can have C code loaded onto them
 
-<span id="N-pwr-R" class="heading"><a href="https://github.com/kyx0r/N-pwr-R-permutation-lister">N-pwr-R</a><br>
-===============</span><br>
-Lists and outputs all n^r permutations.<br />
-<br />
+Objective:
+This is a unitility program designed for those who know what they are doing.
+In order to properly use it and create own patches one has to know asm and C,
+but otherwise one can run already implemented patches right out of the box.
 
-This program was created in order to aid cracking some simple lock combinations <br />
-were one would need to keep track of combinations that were already used in a file. <br />
-Until the brute force is successful. <br />
-<br />
 
-<span id="Pi-Endeavors" class="heading"><a href="https://github.com/kyx0r/Rasberry-Pi-Endeavors">Pi-Endeavors</a><br>
-===============</span><br>
-Drive WS2811 ledstrip with raspberry pi.<br />
-<br />
+<span id="Eng-Learn" class="heading"><a href="https://github.com/kyx0r/Eng-Learn">Eng-Learn</a>
+===============</span>
+A simple gui program.
 
-Using the driver library this allows to control the addressable ledstrip <br />
-and do anything with it. This involved figuring out how gpio pins work on this device.<br />
-One thing that I left unsolved was the ability to read analog signals, with variable voltage. <br />
-<br />
+Using c++ library called WxWidgets the project aims to create a quizlet
+program where one can create a database of words and quiz self. It has
+complete UTF-8 support and a non repeating randomizer.
 
-<span id="fa" class="heading"><a href="https://github.com/kyx0r/fa">fa</a><br>
-===============</span><br>
-My fork of fa lua scripts for <a href="https://en.wikipedia.org/wiki/Supreme_Commander:_Forged_Alliance">SUPCOM</a><br />
-<br />
+<span id="N-pwr-R" class="heading"><a href="https://github.com/kyx0r/N-pwr-R-permutation-lister">N-pwr-R</a>
+===============</span>
+Lists and outputs all n^r permutations.
 
-The reason this is important and I've decided to list here is because that was one of my first <br />
-real looks into the code, and open source contributions. I've added some ui changes and bug fixes to the <br />
-main repository. Experience counts. And most importantly this taught me how to use git. <br />
-<br />
+This program was created in order to aid cracking some simple lock combinations
+were one would need to keep track of combinations that were already used in a
+file until the brute force is successful.
 
-<span id="Arduino-Projects" class="heading"><a href="https://github.com/kyx0r/Arduino-Projects">Arduino-Projects</a><br>
-===============</span><br>
-Arduino.<br />
-<br />
+<span id="Pi-Endeavors" class="heading"><a href="https://github.com/kyx0r/Rasberry-Pi-Endeavors">Pi-Endeavors</a>
+===============</span>
+Drive WS2811 ledstrip with raspberry pi.
 
-My very first programs were written for arduino, that is where I started.<br />
-There are many things in the repository, from simple buttons inputs to wifi controlled <br />
-led stripes, moisture, light, ping, motion sensors, LCD screens and more. And of course an actual <br />
-circuits had to be built to make this work.<br />
-<br />
+Using the driver library this allows to control the addressable ledstrip
+and do anything with it. This involved figuring out how gpio pins work on this
+device.  One thing that I left unsolved was the ability to read analog signals
+, with variable voltage.
 
-<span id="Atelerix-Engine" class="heading"><a href="https://github.com/kyx0r/Atelerix-Engine">Atelerix-Engine</a><br>
-===============</span><br>
-Experiment to write a game engine.<br />
-<br />
+<span id="fa" class="heading"><a href="https://github.com/kyx0r/fa">fa</a>
+===============</span>
+My fork of fa lua scripts for <a href="https://en.wikipedia.org/wiki/Supreme_Commander:_Forged_Alliance">SUPCOM</a>
 
-Me and my friend wanted to write a game engine from scratch, however it run into <br />
-many issues with portability and at last my friend game up on it, so did I. I keep this repository around <br />
-however because it taught me some interesting concepts. Also it used sfml library for graphics, which <br />
-I do not really like, but if I ever need it, there will be something to look at. <br />
-<br />
+The reason this is important and I've decided to list here is because that was
+one of my first real looks into the code, and open source contributions. I've
+added some ui changes and bug fixes to the main repository. Experience counts.
+And most importantly this taught me how to use git.
 
-<span id="SigFigures-Calc" class="heading"><a href="https://github.com/kyx0r/SigFigures-Calculator-">SigFigures-Calc</a><br>
-===============</span><br>
-Basic but complex calculator.<br />
-<br />
+<span id="Arduino-Projects" class="heading"><a href="https://github.com/kyx0r/Arduino-Projects">Arduino-Projects</a>
+===============</span>
+Arduino.
 
-This was a project for Ap computer science class, and the objective was to write <br />
-a significant figures calculator using just javascipt syntax, no api was allowed.<br />
-It took 1000 lines of code and just pure parsing/algorithms. Giving the complex rules of <br />
-significant figures and the limitations of my knowledge of javascript this became rather complex <br />
-code, although it did meet it's requirements in the end. <br />
-<br />
+My very first programs were written for arduino, that is where I started.
+There are many things in the repository, from simple buttons inputs to wifi
+controlled led stripes, moisture, light, ping, motion sensors, LCD screens and
+more. And of course an actual circuits had to be built to make this work.
 
-<span id="ArthasModPack" class="heading"><a href="https://github.com/kyx0r/Arthas-ModPack-FAF">ArthasModPack</a><br>
-===============</span><br>
-My collection of mods for <a href="https://en.wikipedia.org/wiki/Supreme_Commander:_Forged_Alliance">SUPCOM</a><br />
-<br />
+<span id="Atelerix-Engine" class="heading"><a href="https://github.com/kyx0r/Atelerix-Engine">Atelerix-Engine</a>
+===============</span>
+Experiment to write a game engine.
 
-I've tried to collect the best mods for the game in one place. A lot of them had to be rescriped and <br />
-remade to work under different from original version of the game codebase. Although currently unmaintained<br />
-it does feture some unique mods that nobody knows about. I've spent a lot of free time on this.<br />
-<br />
+Me and my friend wanted to write a game engine from scratch, however it run into
+many issues with portability and at last my friend game up on it, so did I. I
+keep this repository around however because it taught me some interesting
+concepts. Also it used sfml library for graphics, which I do not really like,
+but if I ever need it, there will be something to look at.
 
-<span id="MASM-Projects" class="heading"><a href="https://github.com/kyx0r/MASM-Projects">MASM-Projects</a><br>
-===============</span><br>
-What I've done with microsoft assembler.<br />
-<br />
+<span id="SigFigures-Calc" class="heading"><a href="https://github.com/kyx0r/SigFigures-Calculator-">SigFigures-Calc</a>
+===============</span>
+Basic but complex calculator.
 
-Me learning graphics programming and assembly at the same time. <br />
-I have used old direct X libraries 8 & 9 to render simple scenes like textured cube. <br />
-Doing this at such a low level gave me a lot of insight on how processors work. <br />
-However at some point it became very difficult to work with as complexity rised. <br />
-<br />
+This was a project for Ap computer science class, and the objective was to
+write a significant figures calculator using just javascipt syntax, no api was
+allowed.  It took 1000 lines of code and just pure parsing/algorithms. Giving
+the complex rules of significant figures and the limitations of my knowledge
+of javascript this became rather complex code, although it did meet it's
+requirements in the end.
 
-<span id="Cell-Game-LD40" class="heading"><a href="https://github.com/kyx0r/Cell-Game-LD40">Cell-Game-LD40</a><br>
-===============</span><br>
-Game made for the jam.<br />
-<br />
+<span id="ArthasModPack" class="heading"><a href="https://github.com/kyx0r/Arthas-ModPack-FAF">ArthasModPack</a>
+===============</span>
+My collection of mods for <a href="https://en.wikipedia.org/wiki/Supreme_Commander:_Forged_Alliance">SUPCOM</a>
 
-Me and my friend participated in even called Ludum Dare, where <br />
-people compete to make a full indie game in 48 hours. Based on the theme we <br />
-made a game that is similar to agar.io using unity game engine and C-sharp scripting. <br />
-The game got 15 upvotes, which is not too bad. But needed to get 20 to be the contestant. <br />
-Nonetheless can't take that away from me. <br />
-<br />
+I've tried to collect the best mods for the game in one place. A lot of them
+had to be rescriped and remade to work under different from original version
+of the game codebase. Although currently unmaintained it does feture some
+unique mods that nobody knows about. I've spent a lot of free time on this.
 
-<span id="My-Website" class="heading"><a href="https://github.com/kyx0r/My-Website">My-Website</a><br>
-===============</span><br>
-This website.<br />
-<br />
+<span id="MASM-Projects" class="heading"><a href="https://github.com/kyx0r/MASM-Projects">MASM-Projects</a>
+===============</span>
+What I've done with microsoft assembler.
 
-Despite this being simple site, the fonts and css sheets for this can be found with help <br />
-of link above. <br />
-<br />
+Me learning graphics programming and assembly at the same time. I have used
+old direct X libraries 8 & 9 to render simple scenes like textured cube. Doing
+this at such a low level gave me a lot of insight on how processors work.
+However at some point it became very difficult to work with as complexity rised.
 
-<span id="Uni-Labs" class="heading"><a href="https://github.com/kyx0r/Uni-Labs">Uni-Labs</a><br>
-===============</span><br>
-All my work and assignments for University C programming course.<br />
-<br />
+<span id="Cell-Game-LD40" class="heading"><a href="https://github.com/kyx0r/Cell-Game-LD40">Cell-Game-LD40</a>
+===============</span>
+Game made for the jam.
 
-There is nothing special about this. Just a way for me to be organized. <br>
-Tasks are usually quite trivial and mostly have to do with parsing something or <br>
-creating a certain output to the console. This may change in the future though. <br>
-<br />
+Me and my friend participated in even called Ludum Dare, where people compete
+to make a full indie game in 48 hours. Based on the theme we made a game that
+is similar to agar.io using unity game engine and C-sharp scripting. The game
+got 15 upvotes, which is not too bad. But needed to get 20 to be the contestant.
+Nonetheless can't take that away from me.
 
-<span id="Klec" class="heading"><a href="https://github.com/kyx0r/klec">Klec</a><br>
-===============</span><br>
-This repo consists of my personal linux dotfiles, configs <br />
-and various scripts that I use or needed to have backed up. <br />
-<br />
-I also maintain my personal versions/forks of different C <br />
-programs such as my own window manager for X11, terminal<br />
-emulator, text editor, onscreen keyboard, filemanager,<br />
-webbrowser, etc.<br />
-Some of these programs are heavily modified in the process<br />
-of me needing more features. All changes are mentioned in <br />
-the readme.<br />
-<br />
+<span id="My-Website" class="heading"><a href="https://github.com/kyx0r/My-Website">My-Website</a>
+===============</span>
+This website.
 
-<br><br>
+Despite this being simple site, the fonts and css sheets for this can be found
+with help of link above.
+
+<span id="Uni-Labs" class="heading"><a href="https://github.com/kyx0r/Uni-Labs">Uni-Labs</a>
+===============</span>
+All my work and assignments for University C programming course.
+
+There is nothing special about this. Just a way for me to be organized. Tasks
+are usually quite trivial and mostly have to do with parsing something or
+creating a certain output to the console. This may change in the future though.
+
+<span id="Klec" class="heading"><a href="https://github.com/kyx0r/klec">Klec</a>
+===============</span>
+This repo consists of my personal linux dotfiles, configs
+and various scripts that I use or needed to have backed up.
+
+I also maintain my personal versions/forks of different C
+programs such as my own window manager for X11, terminal
+emulator, text editor, onscreen keyboard, filemanager,
+webbrowser, etc.
+Some of these programs are heavily modified in the process
+of me needing more features. All changes are mentioned in
+the readme.
+
+</pre>
+</div>
+</div>
