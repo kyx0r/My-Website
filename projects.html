@@ -62,6 +62,8 @@ kyx0r
 | <a href="#My-Website" target="_self">My-Website</a>        |
 | <a href="#Uni-Labs" target="_self">Uni-Labs</a>          |
 | <a href="#Klec" target="_self">Klec</a>              |
+| <a href="#Nextvi" target="_self">Nextvi</a>            |
+| <a href="#Pikevm" target="_self">Pikevm</a>            |
 +-------------------+
 </pre>
 
@@ -129,7 +131,7 @@ Current Patches available:
 - Removed hard-coded no-rush timer and made it flexible to any value
 - Fixed replay desyncronization issues when a player leaves the game while other
 &nbsp;&nbsp;players give unit commands, I reverse engineered the network
-protocol and wrote robust &nbsp;&nbsp;algoritm to block any commands at that
+protocol and wrote robust &nbsp;&nbsp;algorithm to block any commands at that
 precious moment. (Really difficult patch to implement, lots &nbsp;&nbsp;of
 time went into this)
 - Removed some code in many places with the goal to improve performance
@@ -283,6 +285,22 @@ webbrowser, etc.
 Some of these programs are heavily modified in the process
 of me needing more features. All changes are mentioned in
 the readme.
+
+<span id="Nextvi" class="heading"><a href="https://github.com/kyx0r/nextvi">Nextvi</a>
+===============</span>
+My own custom made text editor, which I spent over a year actively developing,
+optimizing and maintaining. Perhaps the most notable and famous program on this list.
+If suckless.org made their own official suckless text editor, this must of been nextvi.
+Nextvi is incredible for how small, fast, efficient, feature rich it is. There isn't any
+real competitor in the world currenly (and likely not in the future) which can 
+meet all those traits.
+
+<span id="Pikevm" class="heading"><a href="https://github.com/kyx0r/pikevm">Pikevm</a>
+===============</span>
+Fastest NFA table based regex engine in the world. Includes entire BRE 
+functionality and some pcre features. Supports utf-8. Extremely small code base
+around 650 LOC. Utilizes clever submatch extraction algorithm by Russ Cox further improved 
+by me.
 
 </pre>
 </div>
