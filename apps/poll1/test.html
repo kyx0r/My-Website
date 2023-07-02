@@ -1,0 +1,45 @@
+<style>
+.box1 {
+  position: relative;
+  background-color: #ccc;
+  border: 1px solid #000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box2 {
+  position: absolute;
+  background-color: #f00;
+  left: 33%;
+  border: 1px solid #000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#container {
+	max-width: 1200px;
+	min-height: 100vh;
+	margin: 0 auto;
+	background-color: rgba(250,250,250,0.7);
+	box-shadow: 0px 0px 20px 10px rgba(20, 20, 20, 0.75);
+}
+</style>
+<!--
+<div id="container">
+	<header class="box1">
+	  <h1 class="box2">
+	    This is the second box.
+	  </h1>
+	  This is the first box.
+	</header>
+</div>
+-->
+<div id="container">
+<body>
+  <div style="position: absolute; left: 50%;">
+    <div style="position: relative; left: -50%; border: dotted red 1px;">
+      I am some centered shrink-to-fit content! <br />
+      tum te tum
+    </div>
+  </div>
+</body>
+</div>
