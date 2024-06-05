@@ -4,7 +4,6 @@ require('config.php');
 require('upload_function.php');
 
 $item_id=$_GET['id'];
-
 $sql_get_item = "SELECT * FROM crud_tbl WHERE item_id=$item_id";
 $result = $makeconnection->query( $sql_get_item);
 $row = $result->fetch_assoc();
@@ -16,31 +15,30 @@ $item_name = $_POST['item_name'];
 $item_price = $_POST['item_price'];
 $item_brand = $_POST['item_brand'];
 $item_desc = $_POST['item_desc'];
-	
-	if(isset($_POST['item_update_img']) && $_POST['item_update_img']=='yes'){
-$item_img=upload_img();
-		
-$sql_modify = "UPDATE crud_tbl SET  
- item_name = '$item_name',
- item_price = '$item_price',
- item_brand = '$item_brand',
- item_desc = '$item_desc',
- item_img='$item_img'
- 
-			  WHERE item_id = '$item_id'";
-			  
-			  }else{
-$sql_modify = "UPDATE crud_tbl SET  
- item_name = '$item_name',
- item_price = '$item_price',
- item_brand = '$item_brand',
- item_desc = '$item_desc'
- 
- 
-			  WHERE item_id = '$item_id'";
-			  }
-	
-	
+$item_rating = $_POST['item_rating'];
+$item_rating_cnt = $_POST['item_rating_cnt'];
+
+if(isset($_POST['item_update_img']) && $_POST['item_update_img']=='yes'){
+	$item_img=upload_img();
+	$sql_modify = "UPDATE crud_tbl SET  
+	item_name = '$item_name',
+	item_price = '$item_price',
+	item_brand = '$item_brand',
+	item_desc = '$item_desc',
+	item_rating = '$item_rating',
+	item_rating_cnt = '$item_rating_cnt',
+	item_img='$item_img'
+	WHERE item_id = '$item_id'";
+}else{
+	$sql_modify = "UPDATE crud_tbl SET  
+	item_name = '$item_name',
+	item_price = '$item_price',
+	item_brand = '$item_brand',
+	item_rating = '$item_rating',
+	item_rating_cnt = '$item_rating_cnt',
+	item_desc = '$item_desc'
+	WHERE item_id = '$item_id'";
+}
 
 $result = $makeconnection->query( $sql_modify );
 
@@ -106,6 +104,14 @@ header ("Location: index.php");
           <td><input type="text" name="item_brand" id="item_brand" required value="<?php echo $row["item_brand"]; ?>"></td>
     </tr>
     <tr>
+      <td height="77" align="right" valign="middle">Item Rating </td>
+       <td><input type="number" name="item_rating" id="item_rating" required value="<?php echo $row["item_rating"]; ?>"></td>
+    </tr>
+    <tr>
+      <td height="77" align="right" valign="middle">Vote Count </td>
+       <td><input type="number" name="item_rating_cnt" id="item_rating_cnt" required value="<?php echo $row["item_rating_cnt"]; ?>"></td>
+    </tr>
+    <tr>
       <td align="right" valign="middle">Item description</td>
 		<td><textarea name="item_desc" id="item_desc" required rows="8" cols="21"><?php echo $row["item_desc"]; ?></textarea></td>
     </tr>
@@ -132,7 +138,7 @@ header ("Location: index.php");
 	</form>	
 		  <script>
 					$("#modify_item_form").validate();
-				</script>
+		</script>
 	  </main>
 		<!--end main-->
 	

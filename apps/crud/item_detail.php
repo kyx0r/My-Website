@@ -44,6 +44,7 @@ $row = $result->fetch_assoc()
 			<h3 class="item_name">Item name: <?php echo $row["item_name"]; ?></h3>
 			<p class="item_price">Item price: $<?php echo $row["item_price"]; ?></p>
 					<p class="item_brand">Item brand: <?php echo $row["item_brand"]; ?></p>
+			<p class="item_price">Item rating: <?php echo round($row["item_rating"] / $row["item_rating_cnt"], 2); ?>/5 Votes: <?php echo $row["item_rating_cnt"]?></p>
 					<p class="item_desc">Item description:</p> 
 			<pre><?php echo $row["item_desc"]; ?></pre>
 		

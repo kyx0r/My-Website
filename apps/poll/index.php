@@ -34,7 +34,7 @@ WHERE poll_email='$email'  ";
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width,initial-scale=1.0" name="viewport">
-	<title>Favorite Presidential Candidate</title>
+	<title>Favorite Cat Breed</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="js/poll_animate.js"></script>
@@ -45,7 +45,7 @@ WHERE poll_email='$email'  ";
 <body>
 	<div id="container">
 		<header>
-			<h1>Who's Your Favorite Presidential Candidate?</h1>
+			<h1>What's Your Favorite Cat Breed?</h1>
 		</header>
 		<main>
 			<div id="vote">
@@ -58,13 +58,13 @@ WHERE poll_email='$email'  ";
 					?>
 				<h2>Vote Now!</h2>
 				<form id="poll_vote" name="poll_vote" method="post" action="">
-					<label>D. Mocrat</label>
+					<label>Maine Coon</label>
 					<input type="radio" id="voteA" value="a" name="vote"/>
 					<br>
-					<label>R. Publican </label>
+					<label>Siamese </label>
 					<input type="radio" id="voteB" value="b" name="vote"/>
 					<br>
-					<label>Undecided </label>
+					<label>Persian </label>
 					<input type="radio" id="voteA" value="c" name="vote"/>
 					<br>
 					<label for="vote" class="radioreq error"></label>
@@ -82,8 +82,8 @@ WHERE poll_email='$email'  ";
 					<label>Solve:
        
           <?php 
-		  $firstNum= rand(1,10);
-		  $secondNum= rand(1,10);
+		  $firstNum= rand(3,6);
+		  $secondNum= rand(3,6);
            echo $firstNum.'+'.$secondNum.'?';
 		   ?>   
 		</label>
@@ -154,6 +154,7 @@ WHERE poll_email='$email'  ";
 				</div>
 				<!--end opt C-->
 			</div>
+			<div id="totals"></div>
 			<!--end results-->
 			<?php
 			} //end of the if that shows results only if voted

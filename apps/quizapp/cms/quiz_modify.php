@@ -114,7 +114,7 @@ $question_statement = str_replace($replace_str, '&quot;', $question_statement);
 						<select name="question_points" id="question_points" required>
 							<option selected disabled>assign points</option>
 							<?php
-								for ($i=1;$i<100;$i++){
+								for ($i=100;$i>0;$i-=5){
 									if ($row["question_points"]==$i){
 										$markSelect="selected";
 									}else{
@@ -123,7 +123,7 @@ $question_statement = str_replace($replace_str, '&quot;', $question_statement);
 									
 									
 									
-								echo "<option $markSelect value=\"$i\">$i</option>";
+								echo "<option $markSelect value=\"$i\">Question is worth $i points.</option>";
 								}
 							?>
 						</select>

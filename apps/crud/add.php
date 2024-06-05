@@ -15,14 +15,17 @@ $item_name = $_POST['item_name'];
 $item_price = $_POST['item_price'];
 $item_brand = $_POST['item_brand'];
 $item_desc = $_POST['item_desc'];
-	
-	
-	
+$item_rating = $_POST['item_rating'];
+
+if ($item_rating > 5 || $item_rating < 0) {
+	header ("Location: add.php?message=validationfail");
+	exit('1');
+}
 	
 $insertSQL = "INSERT INTO crud_tbl
-(item_name, item_price, item_brand, item_desc ,item_img)
+(item_name, item_price, item_brand, item_desc ,item_img, item_rating, item_rating_cnt)
 VALUES
-('$item_name','$item_price','$item_brand','$item_desc','$item_img')";
+('$item_name','$item_price','$item_brand','$item_desc','$item_img', '$item_rating', 1)";
 $result = $makeconnection->query( $insertSQL );
 
 header ("Location: index.php");
@@ -71,6 +74,10 @@ header ("Location: index.php");
           <td><input type="text" name="item_brand" id="item_brand" required></td>
     </tr>
     <tr>
+      <td height="77" align="right" valign="middle">Item Rating 0-5</td>
+          <td><input type="number" name="item_rating" id="item_rating" required></td>
+    </tr>
+    <tr>
       <td align="right" valign="middle">Item description</td>
 		<td><textarea name="item_desc" id="item_desc" required rows="8" cols="21"></textarea></td>
     </tr>
@@ -85,11 +92,16 @@ header ("Location: index.php");
     </tr>
 
 </table>
+<?php
+if ( isset( $_GET[ 'message' ] ) && $_GET[ 'message' ] == 'validationfail' ) {
+	echo "Please enter rating from 0 to 5.";
+}
+?>
 		
 	</form>	
-		  <script>
-					$("#add_item_form").validate();
-				</script>
+		<script>
+		$("#add_item_form").validate();
+		</script>
 	  </main>
 		<!--end main-->
 	

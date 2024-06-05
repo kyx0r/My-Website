@@ -100,9 +100,10 @@ function JS_delete_item(item_id){
 			<p class="item_price">$<?php echo $row["item_price"]; ?></p>
 		</a>
 				
-						<p class="modify_link"><a href="modify.php?id=<?php echo $row["item_id"]; ?>">Modify</a></p>
-	<p class="delete_link"><a href="javascript:JS_delete_item(<?php echo $row['item_id']; ?>);">Delete</a></p>
-				</div>
+		<p><a href="modify.php?id=<?php echo $row["item_id"]; ?>">Modify</a></p>
+		<p><a href="javascript:JS_delete_item(<?php echo $row['item_id']; ?>);">Delete</a></p>
+		<p><a href="rate.php?id=<?php echo $row["item_id"]; ?>">Rate</a></p>
+		</div>
 			
 			<!--end item small-->
 		
