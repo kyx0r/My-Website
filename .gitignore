@@ -4,5 +4,5 @@ resume
 .well-known
 file.txt
 bin
-j*
+_j*
 nohup.out
