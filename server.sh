@@ -8,8 +8,9 @@ cleanup() {
 }
 mariadbd --user=root &
 sleep 10
-#quark -h 99.26.104.141 -p 80 &
-php -S 99.26.104.141:80 &
-hitch --frontend=[99.26.104.141]:443 --backend=[99.26.104.141]:80 /root/kyryl.me.pem &
-trap "cleanup" SIGINT SIGTERM EXIT
+#quark -h $IP -p 80 &
+IP=99.72.58.241
+php -S $IP:80 &
+hitch --frontend=[$IP]:443 --backend=[$IP]:80 /root/kyryl.me.pem &
+trap "cleanup" SIGINT SIGTERM
 wait $(jobs -p)
